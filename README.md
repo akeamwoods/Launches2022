@@ -1,38 +1,36 @@
-Live Storybook:
+#Live Demo:
+https://launch2022.vercel.app/
+
+#Live Storybook:
 https://www.chromatic.com/library?appId=635b193538b662c914899e81
 
-## Getting Started
+# Tested with Chrome and Safari on a Macbook
 
-First, run the development server:
+# For code quality and styling this project has pre-commit hooks setup to automatically check code as it is commited. If there are errors then it is rejected. This is achieved using the following packages:
++ husky
++ elint
++ prettier
++ lint-staged
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Animation
+The animation in this project is achieved using framer-motion
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Styling
+Styling is done via styled-components
 
-## Task to be completed
-We would like you to clone this repository and amend the home page to display a list of Cards with the launch data retrieved from the spacex data api. You may take as long as you require to complete the solution to demonstrate your knowledge in creating a web application, however, we ideally would like this returned within 3 days.
+# Github Actions
+I've used a github action to run chromatic checks on each PR. What is Chromatic? find out: https://www.chromatic.com/
+View PR builds: https://www.chromatic.com/builds?appId=635b6b51b8460796fdfbc30d
 
-Please consider the structure of your code and develop as if you were working in a commercial team environment and test the solution as you see fit.
+# Testing
+There is a simple example of a cypress e2e test in the project. I will try to find time to add an example of react-testing-library tests
 
-The restful api that we would like you to use is https://api.spacexdata.com/v3/launches
+# Notes
++ There are a few ignore prettier warnings. These were added right at the end of the project as I was getting build errors when trying to host my project on vercel. The automatic prettier setup I added via husky was clashing with my local rules. This is probably simply due to an incorrect extension being added somewhere...
++ I did not create the star background myself, this comes from https://codepen.io/jensaxena/pen/KQmvoK
++ I did not create the PropertyNormalizerUtility, I felt this was needed for the project as I wanted to follow convention and use camelCase, but for a take home test did not want to spend too much time re-inventing the wheel. Credit here: https://medium.com/swlh/dont-let-api-data-structure-your-javascript-application-7fa7fd5a590f
 
-Your solution should cover the following tasks:
-- Make api request on page load
-- Store response json into component state
-- Display data top 10 items
+# Things that could be improved
++ import aliasing
++ i'm pretty sure the SSR could be improved. The new data fetching approach in Next 13 https://nextjs.org/blog/next-13#data-fetching (which was only released a couple of days ago) looks great and i'll probably convert this project to a Next 13 at some point...
 
-The data that we would like you to display are:
-- mission_name
-- launch_date_utc
-- from rocket object
-	- list core_serial from the cores array in first_stage
-	- payload_id and payload_type from payloads array in second_stage
-- display the image from mission_patch_small in links
-- use launch_success and launch_failure_details to show the user the success/failure of launch and reason of failure.
-
-Note
-flight_number as a unique property for each launch object.
