@@ -32,7 +32,7 @@ View PR builds: https://www.chromatic.com/builds?appId=635b6b51b8460796fdfbc30d
 <img width="1326" alt="Screenshot 2022-10-28 at 08 20 35" src="https://user-images.githubusercontent.com/19963177/198527744-b169a758-f9e1-425a-819e-4ffb162a6acf.png">
 
 + There is snapshot testing of the components in the project via Chromatic and Storybook
-+ There is also a simple example of a cypress e2e testing in the project. I will try to find time to add an example of react-testing-library tests
++ There is also a simple example of a cypress e2e testing in the project, as well as jest/react-testing-library
 
 ## Notes
 + There are a few ignore prettier warnings. These were added right at the end of the project as I was getting build errors when trying to host my project on vercel. The automatic prettier setup I added via husky was clashing with my local rules. This is probably simply due to an incorrect extension being added somewhere...
