@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export default class Util {
   /**
    * Recursive function that makes a clone of an object.

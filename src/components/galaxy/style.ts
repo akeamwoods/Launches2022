@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import styled from 'styled-components';
 
 // Background from here: https://codepen.io/jensaxena/pen/KQmvoK

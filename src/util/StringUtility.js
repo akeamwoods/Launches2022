@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export default class StringUtility {
   /**
    * Converts a string to a camel case string.
