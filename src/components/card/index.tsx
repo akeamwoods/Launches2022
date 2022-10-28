@@ -42,7 +42,7 @@ export const Card = (cardProps: SpaceDataType & { onClick: () => void }) => {
           <div>{format(new Date(launchDateUtc), 'do MMM yyyy')}</div>
         </CardHeader>
         <ImageWrapper>{missionPatch && <Image src={missionPatch} alt="img" width={55} height={55} />}</ImageWrapper>
-        <CardFooter isSuccess={launchSuccess}>
+        <CardFooter isSuccess={launchSuccess} data-testid="card-footer">
           <h3>{launchSuccess ? 'Success' : 'Failure'}</h3>
         </CardFooter>
       </motion.div>
