@@ -1,3 +1,5 @@
+<img width="1440" alt="Screenshot 2022-10-28 at 07 58 50" src="https://user-images.githubusercontent.com/19963177/198523803-66a1efc6-3b6b-4820-b234-834dacb628f4.png">
+
 # Live Demo:
 https://launch2022.vercel.app/
 
@@ -6,7 +8,8 @@ https://www.chromatic.com/library?appId=635b193538b662c914899e81
 
 ### Tested with Chrome and Safari on a Macbook
 
-## For code quality and styling this project has pre-commit hooks setup to automatically check code as it is commited. If there are errors then it is rejected. This is achieved using the following packages:
+## Code Quality Safeguards
+For code quality and styling this project has pre-commit hooks setup to automatically check code as it is commited. If there are errors then it is rejected. This is achieved using the following packages:
 + husky
 + elint
 + prettier
