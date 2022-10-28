@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { dehydrate, QueryClient, useQuery } from 'react-query';
 import PropertyNormalizerUtility from './../src/util/PropertyNormalizerUtility';
 import { Galaxy } from '../src/components/galaxy';

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { motion, AnimatePresence } from 'framer-motion';
 import { SpaceDataType } from '../../types';
 import { Card } from '../card';

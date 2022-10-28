@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { FaRocket, FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import { ControlWrapper } from './style';
 import { motion } from 'framer-motion';
