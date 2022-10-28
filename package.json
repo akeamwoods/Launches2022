@@ -1,8 +1,11 @@
 {
   "name": "launches-test",
+  "homepage": "https://akeamwoods.github.io/Launches2022",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -47,6 +50,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-prettier": "^4.0.0",
+    "gh-pages": "^4.0.0",
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^2.6.2",
