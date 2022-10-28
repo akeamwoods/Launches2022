@@ -6,6 +6,7 @@ import { Direction, SpaceDataType } from '../src/types';
 import { useEffect, useState } from 'react';
 import { Controls } from '../src/components/controls';
 import { CardBoard } from '../src/components/cardBoard';
+import { useStore } from './../src/store/store';
 
 const getData = async (offset: number) =>
   PropertyNormalizerUtility.normalize(
@@ -25,12 +26,14 @@ export async function getServerSideProps() {
 }
 
 export default function Home() {
-  const [offset, setOffset] = useState(0);
+  const offset = useStore((state) => state.offset);
+  const setOffset = useStore((state) => state.changeoffset);
   const [direction, setDirection] = useState<Direction>('Left');
   const { isLoading, data, refetch, isFetching } = useQuery<SpaceDataType[]>('spaceData', () => getData(offset));
 
   useEffect(() => {
     refetch();
+    console.log('hit');
   }, [refetch, offset]);
 
   if (isLoading) return <div>Loading...</div>;

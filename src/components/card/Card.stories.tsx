@@ -12,7 +12,7 @@ export default {
     launchDateUtc: '2006-03-17T00:00:00.000Z',
     flightNumber: 1,
     launchSuccess: true,
-    links: { missionPatch: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' },
+    links: { missionPatchSmall: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' },
     rocket: {
       firstStage: {
         cores: [{ coreSerial: '1' }],
@@ -37,7 +37,7 @@ SuccessfulLaunch.args = {
   launchDateUtc: '2006-03-17T00:00:00.000Z',
   flightNumber: 1,
   launchSuccess: true,
-  links: { missionPatch: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' },
+  links: { missionPatchSmall: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' },
   rocket: {
     firstStage: {
       cores: [{ coreSerial: '1' }],
@@ -58,7 +58,7 @@ UnsuccessfulLaunch.args = {
   missionName: 'Mission Name',
   launchDateUtc: '2006-03-17T00:00:00.000Z',
   launchSuccess: false,
-  links: { missionPatch: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' },
+  links: { missionPatchSmall: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' },
   launchFailureDetails: { reason: 'reason' },
   rocket: {
     firstStage: {

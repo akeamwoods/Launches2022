@@ -18,7 +18,7 @@ export type SpaceDataType = {
   missionName: string;
   launchDateUtc: string;
   links: {
-    missionPatch: string;
+    missionPatchSmall: string;
   };
   rocket: {
     firstStage: {

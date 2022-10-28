@@ -25,7 +25,7 @@ it('Succesful launches render correctly', () => {
         launchDateUtc={'2006-03-17T00:00:00.000Z'}
         flightNumber={1}
         launchSuccess={true}
-        links={{ missionPatch: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' }}
+        links={{ missionPatchSmall: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' }}
         rocket={{
           firstStage: { cores: [{ coreSerial: '1' }] },
           secondStage: { payloads: [{ payloadId: '1', payloadType: '1' }] },
@@ -45,7 +45,7 @@ it('Unsuccesful launches render correctly', () => {
         launchDateUtc={'2006-03-17T00:00:00.000Z'}
         flightNumber={1}
         launchSuccess={false}
-        links={{ missionPatch: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' }}
+        links={{ missionPatchSmall: 'https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png' }}
         rocket={{
           firstStage: { cores: [{ coreSerial: '1' }] },
           secondStage: { payloads: [{ payloadId: '1', payloadType: '1' }] },
