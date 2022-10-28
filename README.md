@@ -21,9 +21,11 @@ The animation in this project is achieved using framer-motion
 ## Styling
 Styling is done via styled-components
 
-## Github Actions
+## Chromatic / Github Actions
 I've used a github action to run chromatic checks on each PR. What is Chromatic? find out: https://www.chromatic.com/
 View PR builds: https://www.chromatic.com/builds?appId=635b6b51b8460796fdfbc30d
+<img width="929" alt="Screenshot 2022-10-28 at 01 25 36" src="https://user-images.githubusercontent.com/19963177/198524552-52ae98b6-93a4-4454-93cb-2a7c28424b43.png">
+
 
 ## Testing
 There is a simple example of a cypress e2e test in the project. I will try to find time to add an example of react-testing-library tests
@@ -33,7 +35,9 @@ There is a simple example of a cypress e2e test in the project. I will try to fi
 + I did not create the star background myself, this comes from https://codepen.io/jensaxena/pen/KQmvoK
 + I did not create the PropertyNormalizerUtility, I felt this was needed for the project as I wanted to follow convention and use camelCase, but for a take home test did not want to spend too much time re-inventing the wheel. Credit here: https://medium.com/swlh/dont-let-api-data-structure-your-javascript-application-7fa7fd5a590f
 
-## Things that could be improved
+## Things that could be improved / Didnt have time to fix or implement
++ The animation has a weird bug when viewing the project view the developer tools viewports. I couldn't consistently recreate it and sunk ages investigating. 
 + import aliasing
++ Github action to run e2e tests
 + i'm pretty sure the SSR could be improved. The new data fetching approach in Next 13 https://nextjs.org/blog/next-13#data-fetching (which was only released a couple of days ago) looks great and i'll probably convert this project to a Next 13 at some point...
 
