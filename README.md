@@ -38,6 +38,7 @@ There is a simple example of a cypress e2e test in the project. I will try to fi
 ## Things that could be improved / Didnt have time to fix or implement
 + The animation has a weird bug when viewing the project view the developer tools viewports. I couldn't consistently recreate it and sunk ages investigating. 
 + import aliasing
++ accessibility and semantic html has room for improvement. 
 + Github action to run e2e tests
 + i'm pretty sure the SSR could be improved. The new data fetching approach in Next 13 https://nextjs.org/blog/next-13#data-fetching (which was only released a couple of days ago) looks great and i'll probably convert this project to a Next 13 at some point...
 
