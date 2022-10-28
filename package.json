@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=94c39d12c08b",
+    "chromatic": "npx chromatic --project-token=f7014c6b4811",
     "cypress": "cypress open",
     "cypress:run": "cypress run"
   },
