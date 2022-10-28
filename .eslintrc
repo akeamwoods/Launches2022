@@ -1,5 +1,11 @@
 {
   "parser": "@typescript-eslint/parser",
-  "extends": ["@avayler/eslint-config", "prettier", "plugin:cypress/recommended"],
+  "extends": [
+    "next",
+    "@avayler/eslint-config",
+    "prettier",
+    "plugin:cypress/recommended",
+    "plugin:@next/next/recommended"
+  ],
   "plugins": ["cypress"]
 }
